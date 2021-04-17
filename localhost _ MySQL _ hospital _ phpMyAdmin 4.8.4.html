@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<!-- saved from url=(0080)http://localhost/phpmyadmin/db_structure.php?db=hospital&table=&server=1&target= -->
+<html lang="fr" dir="ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="referrer" content="no-referrer"><meta name="robots" content="noindex,nofollow"><meta http-equiv="X-UA-Compatible" content="IE=Edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="icon" href="http://localhost/phpmyadmin/favicon.ico" type="image/x-icon"><link rel="shortcut icon" href="http://localhost/phpmyadmin/favicon.ico" type="image/x-icon"><link rel="stylesheet" type="text/css" href="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/jquery-ui.css"><link rel="stylesheet" type="text/css" href="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/codemirror.css"><link rel="stylesheet" type="text/css" href="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/show-hint.css"><link rel="stylesheet" type="text/css" href="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/lint.css"><link rel="stylesheet" type="text/css" href="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/phpmyadmin.css.php"><link rel="stylesheet" type="text/css" href="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/printview.css" media="print" id="printcss"><title>localhost / MySQL / hospital | phpMyAdmin 4.8.4</title><script data-cfasync="false" type="text/javascript" src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/jquery.min.js.téléchargement"></script>
+<script data-cfasync="false" type="text/javascript" src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/jquery-migrate.js.téléchargement"></script>
+<script data-cfasync="false" type="text/javascript" src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/whitelist.php"></script>
+<script data-cfasync="false" type="text/javascript" src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/sprintf.js.téléchargement"></script>
+<script data-cfasync="false" type="text/javascript" src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/ajax.js.téléchargement"></script>
+<script data-cfasync="false" type="text/javascript" src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/keyhandler.js.téléchargement"></script>
+<script data-cfasync="false" type="text/javascript" src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/jquery-ui.min.js.téléchargement"></script>
+<script data-cfasync="false" type="text/javascript" src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/js.cookie.js.téléchargement"></script>
+<script data-cfasync="false" type="text/javascript" src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/jquery.mousewheel.js.téléchargement"></script>
+<script data-cfasync="false" type="text/javascript" src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/jquery.event.drag-2.2.js.téléchargement"></script>
+<script data-cfasync="false" type="text/javascript" src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/jquery.validate.js.téléchargement"></script>
+<script data-cfasync="false" type="text/javascript" src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/jquery-ui-timepicker-addon.js.téléchargement"></script>
+<script data-cfasync="false" type="text/javascript" src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/jquery.ba-hashchange-1.3.js.téléchargement"></script>
+<script data-cfasync="false" type="text/javascript" src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/jquery.debounce-1.0.5.js.téléchargement"></script>
+<script data-cfasync="false" type="text/javascript" src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/menu-resizer.js.téléchargement"></script>
+<script data-cfasync="false" type="text/javascript" src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/cross_framing_protection.js.téléchargement"></script>
+<script data-cfasync="false" type="text/javascript" src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/rte.js.téléchargement"></script>
+<script data-cfasync="false" type="text/javascript" src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/tracekit.js.téléchargement"></script>
+<script data-cfasync="false" type="text/javascript" src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/error_report.js.téléchargement"></script>
+<script data-cfasync="false" type="text/javascript" src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/messages.php"></script>
+<script data-cfasync="false" type="text/javascript" src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/config.js.téléchargement"></script>
+<script data-cfasync="false" type="text/javascript" src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/doclinks.js.téléchargement"></script>
+<script data-cfasync="false" type="text/javascript" src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/functions.js.téléchargement"></script>
+<script data-cfasync="false" type="text/javascript" src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/navigation.js.téléchargement"></script>
+<script data-cfasync="false" type="text/javascript" src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/indexes.js.téléchargement"></script>
+<script data-cfasync="false" type="text/javascript" src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/common.js.téléchargement"></script>
+<script data-cfasync="false" type="text/javascript" src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/page_settings.js.téléchargement"></script>
+<script data-cfasync="false" type="text/javascript" src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/shortcuts_handler.js.téléchargement"></script>
+<script data-cfasync="false" type="text/javascript" src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/db_structure.js.téléchargement"></script>
+<script data-cfasync="false" type="text/javascript" src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/tbl_change.js.téléchargement"></script>
+<script data-cfasync="false" type="text/javascript" src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/codemirror.js.téléchargement"></script>
+<script data-cfasync="false" type="text/javascript" src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/sql.js.téléchargement"></script>
+<script data-cfasync="false" type="text/javascript" src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/runmode.js.téléchargement"></script>
+<script data-cfasync="false" type="text/javascript" src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/show-hint.js.téléchargement"></script>
+<script data-cfasync="false" type="text/javascript" src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/sql-hint.js.téléchargement"></script>
+<script data-cfasync="false" type="text/javascript" src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/lint.js.téléchargement"></script>
+<script data-cfasync="false" type="text/javascript" src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/sql-lint.js.téléchargement"></script>
+<script data-cfasync="false" type="text/javascript" src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/console.js.téléchargement"></script>
+<script data-cfasync="false" type="text/javascript">// <![CDATA[
+PMA_commonParams.setAll({common_query:"",opendb_url:"db_structure.php",lang:"fr",server:"1",table:"",db:"hospital",token:"\"-WSR%@;3i^{a{(7",text_dir:"ltr",show_databases_navigation_as_tree:true,pma_text_default_tab:"Parcourir",pma_text_left_default_tab:"Structure",pma_text_left_default_tab2:false,LimitChars:"50",pftext:"",confirm:true,LoginCookieValidity:"1440",session_gc_maxlifetime:"1440",logged_in:true,is_https:false,rootPath:"/phpmyadmin/",arg_separator:"&",PMA_VERSION:"4.8.4",auth_type:"cookie",user:"root"});
+ConsoleEnterExecutes=false
+AJAX.scriptHandler.add("vendor/jquery/jquery.min.js",0).add("vendor/jquery/jquery-migrate.js",0).add("whitelist.php",1).add("vendor/sprintf.js",1).add("ajax.js",0).add("keyhandler.js",1).add("vendor/jquery/jquery-ui.min.js",0).add("vendor/js.cookie.js",1).add("vendor/jquery/jquery.mousewheel.js",0).add("vendor/jquery/jquery.event.drag-2.2.js",0).add("vendor/jquery/jquery.validate.js",0).add("vendor/jquery/jquery-ui-timepicker-addon.js",0).add("vendor/jquery/jquery.ba-hashchange-1.3.js",0).add("vendor/jquery/jquery.debounce-1.0.5.js",0).add("menu-resizer.js",1).add("cross_framing_protection.js",0).add("rte.js",1).add("vendor/tracekit.js",1).add("error_report.js",1).add("messages.php",0).add("config.js",1).add("doclinks.js",1).add("functions.js",1).add("navigation.js",1).add("indexes.js",1).add("common.js",1).add("page_settings.js",1).add("shortcuts_handler.js",1).add("db_structure.js",1).add("tbl_change.js",1).add("vendor/codemirror/lib/codemirror.js",0).add("vendor/codemirror/mode/sql/sql.js",0).add("vendor/codemirror/addon/runmode/runmode.js",0).add("vendor/codemirror/addon/hint/show-hint.js",0).add("vendor/codemirror/addon/hint/sql-hint.js",0).add("vendor/codemirror/addon/lint/lint.js",0).add("codemirror/addon/lint/sql-lint.js",0).add("console.js",1);
+$(function() {AJAX.fireOnload("whitelist.php");AJAX.fireOnload("vendor/sprintf.js");AJAX.fireOnload("keyhandler.js");AJAX.fireOnload("vendor/js.cookie.js");AJAX.fireOnload("menu-resizer.js");AJAX.fireOnload("rte.js");AJAX.fireOnload("vendor/tracekit.js");AJAX.fireOnload("error_report.js");AJAX.fireOnload("config.js");AJAX.fireOnload("doclinks.js");AJAX.fireOnload("functions.js");AJAX.fireOnload("navigation.js");AJAX.fireOnload("indexes.js");AJAX.fireOnload("common.js");AJAX.fireOnload("page_settings.js");AJAX.fireOnload("shortcuts_handler.js");AJAX.fireOnload("db_structure.js");AJAX.fireOnload("tbl_change.js");AJAX.fireOnload("console.js");});
+// ]]></script><noscript><style>html{display:block}</style></noscript></head><body style="margin-left: 240px; margin-bottom: 17.6094px; padding-top: 57.5625px;"><div id="pma_navigation" style="width: 240px;"><div id="pma_navigation_resizer" style="left: 240px; width: 3px;"></div><div id="pma_navigation_collapser" title="Masquer le panneau" style="left: 240px;">←</div><div id="pma_navigation_content"><div id="pma_navigation_header"><a class="hide navigation_url" href="http://localhost/phpmyadmin/navigation.php?ajax_request=1"></a>    <div id="pmalogo">
+                    <a href="http://localhost/phpmyadmin/index.php">
+                <img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/logo_left.png" alt="phpMyAdmin" id="imgpmalogo">
+                    </a>
+            </div>
+<!-- LINKS START --><div id="navipanellinks"><a href="http://localhost/phpmyadmin/index.php" title="Accueil"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="Accueil" alt="Accueil" class="icon ic_b_home"></a><a href="http://localhost/phpmyadmin/logout.php?db=hospital" class="logout disableAjax" title="Se déconnecter"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="Se déconnecter" alt="Se déconnecter" class="icon ic_s_loggoff"></a><a href="http://localhost/phpmyadmin/doc/html/index.html" target="documentation" title="Documentation de phpMyAdmin"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="Documentation de phpMyAdmin" alt="Documentation de phpMyAdmin" class="icon ic_b_docs"></a><a href="http://localhost/phpmyadmin/url.php?url=https%3A%2F%2Fdev.mysql.com%2Fdoc%2Frefman%2F5.7%2Fen%2Findex.html" target="mysql_doc" title="Documentation"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_sqlhelp"></a><a href="http://localhost/phpmyadmin/db_structure.php?db=hospital&amp;table=&amp;server=1&amp;target=#" id="pma_navigation_settings_icon" title="Paramètres du panneau de navigation"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="Paramètres du panneau de navigation" alt="Paramètres du panneau de navigation" class="icon ic_s_cog"></a><a href="http://localhost/phpmyadmin/db_structure.php?db=hospital&amp;table=&amp;server=1&amp;target=#" id="pma_navigation_reload" title="Rechercher le panneau de navigation"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="Rechercher le panneau de navigation" alt="Rechercher le panneau de navigation" class="icon ic_s_reload"></a></div><!-- LINKS ENDS --><!-- SERVER CHOICE START --><div id="serverChoice"><form method="post" action="http://localhost/phpmyadmin/index.php" class="disableAjax"><input type="hidden" name="token" value="&quot;-WSR%@;3i^{a{(7"><label for="select_server">Serveur courant :</label> <select name="server" id="select_server" class="autosubmit"><option value="">(Serveurs) ...</option>
+<option value="1" selected="selected">MySQL</option>
+<option value="2">MariaDB</option>
+</select></form></div><!-- SERVER CHOICE END --><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="Chargement en cours…" alt="Chargement en cours…" style="visibility: hidden; display:none" class="icon ic_ajax_clock_small throbber"></div><div id="pma_navigation_tree" class="list_container synced highlight" style="height: 538.391px;"><div class="pma_quick_warp"><div class="drop_list"><span title="Tables récentes" class="drop_button">Récentes</span><ul id="pma_recent_list"><li class="warp_link">Pas de tables récentes.</li></ul></div><div class="drop_list"><span title="Tables préférées" class="drop_button">Préférées</span><ul id="pma_favorite_list"><li class="warp_link">Pas de tables préférées.</li></ul></div><div class="clearfloat"></div></div><div class="clearfloat"></div><ul><!-- CONTROLS START --><li id="navigation_controls_outer"><div id="navigation_controls"><a href="http://localhost/phpmyadmin/db_structure.php?db=hospital&amp;table=&amp;server=1&amp;target=#" id="pma_navigation_collapse" title="Tout réduire"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="Tout réduire" alt="Tout réduire" class="icon ic_s_collapseall"></a><a href="http://localhost/phpmyadmin/db_structure.php?db=hospital&amp;table=&amp;server=1&amp;target=#" id="pma_navigation_sync" title="Supprimer la liaison au panneau principal"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="Supprimer la liaison au panneau principal" alt="Supprimer la liaison au panneau principal" class="icon ic_s_link"></a></div></li><!-- CONTROLS ENDS --></ul><div id="pma_navigation_tree_content" style="height: 493.391px;"><ul><li class="first new_database italics"><div class="block"><i class="first"></i></div><div class="block "><a href="http://localhost/phpmyadmin/server_databases.php?server=1"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="" alt="" class="icon ic_b_newdb"></a></div><a class="hover_show_full" href="http://localhost/phpmyadmin/server_databases.php?server=1" title="">Nouvelle base de données</a><div class="clearfloat"></div></li><li class="database selected"><div class="block"><i></i><b></b><a class="expander loaded" href="http://localhost/phpmyadmin/db_structure.php?db=hospital&amp;table=&amp;server=1&amp;target=#"><span class="hide aPath">cm9vdA==.aG9zcGl0YWw=</span><span class="hide vPath">cm9vdA==.aG9zcGl0YWw=</span><span class="hide pos">0</span><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="Développer/Réduire" alt="Développer/Réduire" class="icon ic_b_minus" style=""></a></div><div class="block "><a href="http://localhost/phpmyadmin/db_operations.php?server=1&amp;db=hospital&amp;"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="Opérations sur base de données" alt="Opérations sur base de données" class="icon ic_s_db"></a></div><a class="hover_show_full" href="http://localhost/phpmyadmin/db_structure.php?server=1&amp;db=hospital" title="Structure">hospital</a><div class="clearfloat"></div><div class="list_container hide" style="display: block;"><ul><li class="new_table italics"><div class="block"><i></i><span class="hide pos2_name">tables</span><span class="hide pos2_value">0</span></div><div class="block "><a href="http://localhost/phpmyadmin/tbl_create.php?server=1&amp;db=hospital"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="Nouvelle table" alt="Nouvelle table" class="icon ic_b_table_add"></a></div><a class="hover_show_full" href="http://localhost/phpmyadmin/tbl_create.php?server=1&amp;db=hospital" title="">Nouvelle table</a><div class="clearfloat"></div></li><li class="table"><div class="block"><i></i><b></b><a class="expander" href="http://localhost/phpmyadmin/db_structure.php?db=hospital&amp;table=&amp;server=1&amp;target=#"><span class="hide aPath">cm9vdA==.aG9zcGl0YWw=.dGFibGVz.YWRtaW4=</span><span class="hide vPath">cm9vdA==.aG9zcGl0YWw=.VGFibGVz.YWRtaW4=</span><span class="hide pos">0</span><span class="hide pos2_name">tables</span><span class="hide pos2_value">0</span><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="Développer/Réduire" alt="Développer/Réduire" class="icon ic_b_plus"></a></div><div class="block "><a href="http://localhost/phpmyadmin/tbl_structure.php?server=1&amp;db=hospital&amp;table=admin"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="Structure" alt="Structure" class="icon ic_b_props"></a></div><a class="hover_show_full" href="http://localhost/phpmyadmin/sql.php?server=1&amp;db=hospital&amp;table=admin&amp;pos=0" title="Parcourir">admin</a><div class="clearfloat"></div></li><li class="table"><div class="block"><i></i><b></b><a class="expander" href="http://localhost/phpmyadmin/db_structure.php?db=hospital&amp;table=&amp;server=1&amp;target=#"><span class="hide aPath">cm9vdA==.aG9zcGl0YWw=.dGFibGVz.YXBvaW50bWVudA==</span><span class="hide vPath">cm9vdA==.aG9zcGl0YWw=.VGFibGVz.YXBvaW50bWVudA==</span><span class="hide pos">0</span><span class="hide pos2_name">tables</span><span class="hide pos2_value">0</span><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="Développer/Réduire" alt="Développer/Réduire" class="icon ic_b_plus"></a></div><div class="block "><a href="http://localhost/phpmyadmin/tbl_structure.php?server=1&amp;db=hospital&amp;table=apointment"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="Structure" alt="Structure" class="icon ic_b_props"></a></div><a class="hover_show_full" href="http://localhost/phpmyadmin/sql.php?server=1&amp;db=hospital&amp;table=apointment&amp;pos=0" title="Parcourir">apointment</a><div class="clearfloat"></div></li><li class="table"><div class="block"><i></i><b></b><a class="expander" href="http://localhost/phpmyadmin/db_structure.php?db=hospital&amp;table=&amp;server=1&amp;target=#"><span class="hide aPath">cm9vdA==.aG9zcGl0YWw=.dGFibGVz.ZG9jdG9y</span><span class="hide vPath">cm9vdA==.aG9zcGl0YWw=.VGFibGVz.ZG9jdG9y</span><span class="hide pos">0</span><span class="hide pos2_name">tables</span><span class="hide pos2_value">0</span><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="Développer/Réduire" alt="Développer/Réduire" class="icon ic_b_plus"></a></div><div class="block "><a href="http://localhost/phpmyadmin/tbl_structure.php?server=1&amp;db=hospital&amp;table=doctor"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="Structure" alt="Structure" class="icon ic_b_props"></a></div><a class="hover_show_full" href="http://localhost/phpmyadmin/sql.php?server=1&amp;db=hospital&amp;table=doctor&amp;pos=0" title="Parcourir">doctor</a><div class="clearfloat"></div></li><li class="table"><div class="block"><i></i><b></b><a class="expander" href="http://localhost/phpmyadmin/db_structure.php?db=hospital&amp;table=&amp;server=1&amp;target=#"><span class="hide aPath">cm9vdA==.aG9zcGl0YWw=.dGFibGVz.cGF0aWVudA==</span><span class="hide vPath">cm9vdA==.aG9zcGl0YWw=.VGFibGVz.cGF0aWVudA==</span><span class="hide pos">0</span><span class="hide pos2_name">tables</span><span class="hide pos2_value">0</span><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="Développer/Réduire" alt="Développer/Réduire" class="icon ic_b_plus"></a></div><div class="block "><a href="http://localhost/phpmyadmin/tbl_structure.php?server=1&amp;db=hospital&amp;table=patient"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="Structure" alt="Structure" class="icon ic_b_props"></a></div><a class="hover_show_full" href="http://localhost/phpmyadmin/sql.php?server=1&amp;db=hospital&amp;table=patient&amp;pos=0" title="Parcourir">patient</a><div class="clearfloat"></div></li><li class="last table"><div class="block"><i></i><a class="expander" href="http://localhost/phpmyadmin/db_structure.php?db=hospital&amp;table=&amp;server=1&amp;target=#"><span class="hide aPath">cm9vdA==.aG9zcGl0YWw=.dGFibGVz.cmVjZXB0aW9uaXN0</span><span class="hide vPath">cm9vdA==.aG9zcGl0YWw=.VGFibGVz.cmVjZXB0aW9uaXN0</span><span class="hide pos">0</span><span class="hide pos2_name">tables</span><span class="hide pos2_value">0</span><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="Développer/Réduire" alt="Développer/Réduire" class="icon ic_b_plus"></a></div><div class="block "><a href="http://localhost/phpmyadmin/tbl_structure.php?server=1&amp;db=hospital&amp;table=receptionist"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="Structure" alt="Structure" class="icon ic_b_props"></a></div><a class="hover_show_full" href="http://localhost/phpmyadmin/sql.php?server=1&amp;db=hospital&amp;table=receptionist&amp;pos=0" title="Parcourir">receptionist</a><div class="clearfloat"></div></li></ul></div></li><li class="database"><div class="block"><i></i><b></b><a class="expander" href="http://localhost/phpmyadmin/db_structure.php?db=hospital&amp;table=&amp;server=1&amp;target=#"><span class="hide aPath">cm9vdA==.aW5mb3JtYXRpb25fc2NoZW1h</span><span class="hide vPath">cm9vdA==.aW5mb3JtYXRpb25fc2NoZW1h</span><span class="hide pos">0</span><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="Développer/Réduire" alt="Développer/Réduire" class="icon ic_b_plus"></a></div><div class="block "><a href="http://localhost/phpmyadmin/db_operations.php?server=1&amp;db=information_schema&amp;"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="Opérations sur base de données" alt="Opérations sur base de données" class="icon ic_s_db"></a></div><a class="hover_show_full" href="http://localhost/phpmyadmin/db_structure.php?server=1&amp;db=information_schema" title="Structure">information_schema</a><div class="clearfloat"></div></li><li class="database"><div class="block"><i></i><b></b><a class="expander" href="http://localhost/phpmyadmin/db_structure.php?db=hospital&amp;table=&amp;server=1&amp;target=#"><span class="hide aPath">cm9vdA==.bXlzcWw=</span><span class="hide vPath">cm9vdA==.bXlzcWw=</span><span class="hide pos">0</span><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="Développer/Réduire" alt="Développer/Réduire" class="icon ic_b_plus"></a></div><div class="block "><a href="http://localhost/phpmyadmin/db_operations.php?server=1&amp;db=mysql&amp;"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="Opérations sur base de données" alt="Opérations sur base de données" class="icon ic_s_db"></a></div><a class="hover_show_full" href="http://localhost/phpmyadmin/db_structure.php?server=1&amp;db=mysql" title="Structure">mysql</a><div class="clearfloat"></div></li><li class="database"><div class="block"><i></i><b></b><a class="expander" href="http://localhost/phpmyadmin/db_structure.php?db=hospital&amp;table=&amp;server=1&amp;target=#"><span class="hide aPath">cm9vdA==.cGVyZm9ybWFuY2Vfc2NoZW1h</span><span class="hide vPath">cm9vdA==.cGVyZm9ybWFuY2Vfc2NoZW1h</span><span class="hide pos">0</span><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="Développer/Réduire" alt="Développer/Réduire" class="icon ic_b_plus"></a></div><div class="block "><a href="http://localhost/phpmyadmin/db_operations.php?server=1&amp;db=performance_schema&amp;"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="Opérations sur base de données" alt="Opérations sur base de données" class="icon ic_s_db"></a></div><a class="hover_show_full" href="http://localhost/phpmyadmin/db_structure.php?server=1&amp;db=performance_schema" title="Structure">performance_schema</a><div class="clearfloat"></div></li><li class="last database"><div class="block"><i></i><a class="expander" href="http://localhost/phpmyadmin/db_structure.php?db=hospital&amp;table=&amp;server=1&amp;target=#"><span class="hide aPath">cm9vdA==.c3lz</span><span class="hide vPath">cm9vdA==.c3lz</span><span class="hide pos">0</span><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="Développer/Réduire" alt="Développer/Réduire" class="icon ic_b_plus"></a></div><div class="block "><a href="http://localhost/phpmyadmin/db_operations.php?server=1&amp;db=sys&amp;"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="Opérations sur base de données" alt="Opérations sur base de données" class="icon ic_s_db"></a></div><a class="hover_show_full" href="http://localhost/phpmyadmin/db_structure.php?server=1&amp;db=sys" title="Structure">sys</a><div class="clearfloat"></div></li></ul></div></div><div id="pma_navi_settings_container"></div></div><div class="pma_drop_handler">Déposer des fichiers ici</div><div class="pma_sql_import_status"><h2>SQL upload ( <span class="pma_import_count">0</span> ) <span class="close">x</span><span class="minimize">-</span></h2><div></div></div></div><noscript><div class="error"><img src="themes/dot.gif" title="" alt="" class="icon ic_s_error" /> JavaScript doit être activé !</div></noscript><div id="floating_menubar" style="margin-left: 243px; left: 0px; position: fixed; top: 0px; width: 100%; z-index: 99;"><div id="serverinfo"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="" alt="" class="icon ic_s_host item"><a href="http://localhost/phpmyadmin/index.php" class="item">Serveur: MySQL:3306</a><span class="separator item">&nbsp;»</span><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="" alt="" class="icon ic_s_db item"><a href="http://localhost/phpmyadmin/db_structure.php?db=hospital" class="item">Base de données: hospital</a><div class="clearfloat"></div></div><div id="topmenucontainer" class="menucontainer"><i class="scrollindicator scrollindicator--left"><img alt="" title="" src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" class="icon ic_b_left"></i><div class="navigationbar" style="width: auto; overflow: visible;"><ul id="topmenu" class="resizable-menu"><li class="active">
+
+            <a href="http://localhost/phpmyadmin/db_structure.php?db=hospital" class="tabactive">
+            <img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="Structure" alt="Structure" class="icon ic_b_props">&nbsp;Structure
+            </a>
+        </li>
+<li>
+
+            <a href="http://localhost/phpmyadmin/db_sql.php?db=hospital" class="tab">
+            <img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="SQL" alt="SQL" class="icon ic_b_sql">&nbsp;SQL
+            </a>
+        </li>
+<li>
+
+            <a href="http://localhost/phpmyadmin/db_search.php?db=hospital" class="tab">
+            <img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="Rechercher" alt="Rechercher" class="icon ic_b_search">&nbsp;Rechercher
+            </a>
+        </li>
+<li>
+
+            <a href="http://localhost/phpmyadmin/db_multi_table_query.php?db=hospital" class="tab">
+            <img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="Requête" alt="Requête" class="icon ic_s_db">&nbsp;Requête
+            </a>
+        </li>
+<li>
+
+            <a href="http://localhost/phpmyadmin/db_export.php?db=hospital" class="tab">
+            <img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="Exporter" alt="Exporter" class="icon ic_b_export">&nbsp;Exporter
+            </a>
+        </li>
+<li>
+
+            <a href="http://localhost/phpmyadmin/db_import.php?db=hospital" class="tab">
+            <img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="Importer" alt="Importer" class="icon ic_b_import">&nbsp;Importer
+            </a>
+        </li>
+<li>
+
+            <a href="http://localhost/phpmyadmin/db_operations.php?db=hospital" class="tab">
+            <img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="Opérations" alt="Opérations" class="icon ic_b_tblops">&nbsp;Opérations
+            </a>
+        </li>
+<li>
+
+            <a href="http://localhost/phpmyadmin/server_privileges.php?db=hospital&amp;checkprivsdb=hospital&amp;viewing_mode=db" class="tab">
+            <img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="Privilèges" alt="Privilèges" class="icon ic_s_rights">&nbsp;Privilèges
+            </a>
+        </li>
+
+
+
+
+<li class="submenu shown" style=""><a href="http://localhost/phpmyadmin/db_structure.php?db=hospital&amp;table=&amp;server=1&amp;target=#" class="tab nowrap"><img alt="" title="" src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" class="icon ic_b_more">Plus</a><ul class="notonly"><li>
+
+            <a href="http://localhost/phpmyadmin/db_routines.php?db=hospital" class="tab">
+            <img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="Procédures stockées" alt="Procédures stockées" class="icon ic_b_routines">&nbsp;Procédures stockées
+            </a>
+        </li><li>
+
+            <a href="http://localhost/phpmyadmin/db_events.php?db=hospital" class="tab">
+            <img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="Évènements" alt="Évènements" class="icon ic_b_events">&nbsp;Évènements
+            </a>
+        </li><li>
+
+            <a href="http://localhost/phpmyadmin/db_triggers.php?db=hospital" class="tab">
+            <img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="Déclencheurs" alt="Déclencheurs" class="icon ic_b_triggers">&nbsp;Déclencheurs
+            </a>
+        </li><li>
+
+            <a href="http://localhost/phpmyadmin/db_designer.php?db=hospital" id="designer_tab" class="tab">
+            <img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="Concepteur" alt="Concepteur" class="icon ic_b_relations">&nbsp;Concepteur
+            </a>
+        </li></ul></li><div class="clearfloat"></div></ul></div>
+<i class="scrollindicator scrollindicator--right"><img alt="" title="" src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" class="icon ic_b_right"></i></div></div>
+<span id="page_nav_icons"><span id="lock_page_icon"></span><span id="page_settings_icon" style="display: inline;"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="Paramètres relatifs à la page" alt="Paramètres relatifs à la page" class="icon ic_s_cog"></span><a id="goto_pagetop" href="http://localhost/phpmyadmin/db_structure.php?db=hospital&amp;table=&amp;server=1&amp;target=#"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="Cliquer sur la barre pour faire défiler en haut de page" alt="Cliquer sur la barre pour faire défiler en haut de page" class="icon ic_s_top"></a></span><div id="pma_console_container">
+    <div id="pma_console" style="margin-left: 243px;">
+                <div class="toolbar collapsed">
+                    <div class="switch_button console_switch">
+            <img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="Console de requête SQL" alt="Console de requête SQL" class="icon ic_console">
+            <span>Console de requêtes SQL</span>
+        </div>
+                            <div class="button clear">
+            
+            <span>Effacer</span>
+        </div>
+                            <div class="button history">
+            
+            <span>Historique</span>
+        </div>
+                            <div class="button options">
+            
+            <span>Options</span>
+        </div>
+                            <div class="button bookmarks">
+            
+            <span>Signets</span>
+        </div>
+                            <div class="button debug hide">
+            
+            <span>Déboguer SQL</span>
+        </div>
+            </div>
+                <div class="content" style="height: 92px; margin-bottom: -98.248px; display: none;">
+            <div class="console_message_container">
+                <div class="message welcome binded">
+                    <span id="instructions-0">
+                        Faire Ctrl+Entrée pour exécuter la requête                    </span>
+                    <span class="hide" id="instructions-1">
+                        Faire Entrée pour exécuter la requête                    </span>
+                </div>
+                            </div><!-- console_message_container -->
+            <div class="query_input">
+                <span class="console_query_input"><div class="CodeMirror cm-s-pma CodeMirror-wrap"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 0px; left: 16px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;" tabindex="0"></textarea></div><div class="CodeMirror-vscrollbar" cm-not-content="true"><div style="min-width: 1px; height: 0px;"></div></div><div class="CodeMirror-hscrollbar" cm-not-content="true"><div style="height: 100%; min-height: 1px; width: 0px;"></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 16px; margin-bottom: -17px; border-right-width: 13px; min-height: 15px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><span><span>​</span>x</span></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors"><div class="CodeMirror-cursor" style="left: 0px; top: 0px; height: 15px;">&nbsp;</div></div><div class="CodeMirror-code" role="presentation"><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre></div></div></div></div></div><div style="position: absolute; height: 13px; width: 1px; border-bottom: 0px solid transparent; top: 15px;"></div><div class="CodeMirror-gutters" style="height: 28px;"><div class="CodeMirror-gutter CodeMirror-lint-markers"></div></div></div></div></span>
+            </div>
+        </div><!-- message end -->
+                <div class="mid_layer"></div>
+                <div class="card ungrouped" id="debug_console">
+            <div class="toolbar ">
+                    <div class="button order order_asc active">
+            
+            <span>croissant</span>
+        </div>
+                            <div class="button order order_desc">
+            
+            <span>décroissant</span>
+        </div>
+                            <div class="text">
+            
+            <span>Ordre :</span>
+        </div>
+                            <div class="switch_button">
+            
+            <span>Déboguer SQL</span>
+        </div>
+                            <div class="button order_by sort_count">
+            
+            <span>Nombre</span>
+        </div>
+                            <div class="button order_by sort_exec active">
+            
+            <span>Ordre d'exécution</span>
+        </div>
+                            <div class="button order_by sort_time">
+            
+            <span>Temps nécessaire</span>
+        </div>
+                            <div class="text">
+            
+            <span>Trier par :</span>
+        </div>
+                            <div class="button group_queries">
+            
+            <span>Regrouper les requêtes</span>
+        </div>
+                            <div class="button ungroup_queries">
+            
+            <span>Dissocier les groupes</span>
+        </div>
+            </div>
+            <div class="content debug" style="height: 92px;">
+                <div class="message welcome binded">Une erreur s'est produite lors de l'obtention des informations de débogage SQL.</div>
+                <div class="debugLog"></div>
+            </div> <!-- Content -->
+            <div class="templates">
+                <div class="debug_query action_content">
+                    <span class="action collapse">
+            Réduire
+                    </span>
+                            <span class="action expand">
+            Développer
+                    </span>
+                            <span class="action dbg_show_trace">
+            Afficher le suivi
+                    </span>
+                            <span class="action dbg_hide_trace">
+            Masquer le suivi
+                    </span>
+                            <span class="text count hide">
+            Nombre
+                    </span>
+                            <span class="text time">
+            Temps nécessaire
+                    </span>
+            </div>
+            </div> <!-- Template -->
+        </div> <!-- Debug SQL card -->
+                        <div class="card" id="pma_console_options">
+            <div class="toolbar ">
+                    <div class="switch_button">
+            
+            <span>Options</span>
+        </div>
+                            <div class="button default">
+            
+            <span>Définir par défaut</span>
+        </div>
+            </div>
+            <div class="content" style="height: 92px;">
+                <label>
+                    <input type="checkbox" name="always_expand">Toujours développer les messages                </label>
+                <br>
+                <label>
+                    <input type="checkbox" name="start_history">Afficher l'historique des requêtes au démarrage                </label>
+                <br>
+                <label>
+                    <input type="checkbox" name="current_query">Afficher la requête de navigation courante                </label>
+                <br>
+                <label>
+                    <input type="checkbox" name="enter_executes">
+                        Exécuter les requêtes avec Entrée et insérer une nouvelle ligne avec Maj+Entrée. Ce choix peut être rendu permanent via les paramètres.                </label>
+                <br>
+                <label>
+                    <input type="checkbox" name="dark_theme">Passer au thème sombre                </label>
+                <br>
+            </div>
+        </div> <!-- Options card -->
+        <div class="templates">
+                        <div class="query_actions">
+                    <span class="action collapse">
+            Réduire
+                    </span>
+                            <span class="action expand">
+            Développer
+                    </span>
+                            <span class="action requery">
+            Exécuter la requête à nouveau
+                    </span>
+                            <span class="action edit">
+            Éditer
+                    </span>
+                            <span class="action explain">
+            Expliquer
+                    </span>
+                            <span class="action profiling">
+            Profilage
+                    </span>
+                            <span class="action bookmark">
+            Signet
+                    </span>
+                            <span class="text failed">
+            La requête a échoué
+                    </span>
+                            <span class="text targetdb">
+            Base de données
+                    </span>
+                            <span class="text query_time">
+            Daté du
+                    </span>
+            </div>
+        </div>
+    </div> <!-- #console end -->
+</div> <!-- #console_container end -->
+<div id="page_content"><div id="page_settings_modal"><div class="page_settings"><form method="post" action="http://localhost/phpmyadmin/db_structure.php?db=hospital&amp;table=&amp;server=1&amp;target=" class="config-form disableAjax"><input type="hidden" name="tab_hash" value=""><input type="hidden" name="check_page_refresh" id="check_page_refresh" value="1">
+<input type="hidden" name="token" value="&quot;-WSR%@;3i^{a{(7">
+<input type="hidden" name="submit_save" value="DbStructure"><input type="hidden" name="token" value="&quot;-WSR%@;3i^{a{(7"><ul class="tabs responsivetable">
+
+                                    <li class="active">
+
+            <a href="http://localhost/phpmyadmin/db_structure.php?db=hospital&amp;table=&amp;server=1&amp;target=#DbStructure">
+            Structure de base de données
+            </a>
+        </li>
+            </ul>
+<br><div class="tabs_contents"><fieldset class="optbox" id="DbStructure" style="">
+<legend>Structure de base de données</legend>
+    <p>Choisir les détails à afficher dans la liste des tables.</p>
+<table width="100%" cellspacing="0">
+<tbody><tr><th><label for="ShowDbStructureCharset">Afficher le jeu de caractères de la table</label><span class="doc"><a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_ShowDbStructureCharset" target="documentation"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help"></a>
+</span><small>Afficher ou masquer une colonne affichant le jeu de caractères pour toutes les tables.</small></th><td><span class="checkbox"><input type="checkbox" name="ShowDbStructureCharset" id="ShowDbStructureCharset"></span><a class="restore-default hide" href="http://localhost/phpmyadmin/db_structure.php?db=hospital&amp;table=&amp;server=1&amp;target=#ShowDbStructureCharset" title="Restaurer la valeur par défaut" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr><tr><th><label for="ShowDbStructureComment">Afficher les commentaires de table</label><span class="doc"><a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_ShowDbStructureComment" target="documentation"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help"></a>
+</span><small>Afficher ou masquer une colonne affichant les commentaires pour toutes les tables.</small></th><td><span class="checkbox"><input type="checkbox" name="ShowDbStructureComment" id="ShowDbStructureComment"></span><a class="restore-default hide" href="http://localhost/phpmyadmin/db_structure.php?db=hospital&amp;table=&amp;server=1&amp;target=#ShowDbStructureComment" title="Restaurer la valeur par défaut" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr><tr><th><label for="ShowDbStructureCreation">Afficher l'horodatage de création</label><span class="doc"><a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_ShowDbStructureCreation" target="documentation"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help"></a>
+</span><small>Afficher ou masquer une colonne contenant la date de création pour toutes les tables.</small></th><td><span class="checkbox"><input type="checkbox" name="ShowDbStructureCreation" id="ShowDbStructureCreation"></span><a class="restore-default hide" href="http://localhost/phpmyadmin/db_structure.php?db=hospital&amp;table=&amp;server=1&amp;target=#ShowDbStructureCreation" title="Restaurer la valeur par défaut" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr><tr><th><label for="ShowDbStructureLastUpdate">Afficher l'horodatage de dernière mise à jour</label><span class="doc"><a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_ShowDbStructureLastUpdate" target="documentation"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help"></a>
+</span><small>Afficher ou masquer une colonne contenant l'horodatage de dernière mise à jour pour toutes les tables.</small></th><td><span class="checkbox"><input type="checkbox" name="ShowDbStructureLastUpdate" id="ShowDbStructureLastUpdate"></span><a class="restore-default hide" href="http://localhost/phpmyadmin/db_structure.php?db=hospital&amp;table=&amp;server=1&amp;target=#ShowDbStructureLastUpdate" title="Restaurer la valeur par défaut" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr><tr><th><label for="ShowDbStructureLastCheck">Afficher l'horodatage de dernière vérification</label><span class="doc"><a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_ShowDbStructureLastCheck" target="documentation"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help"></a>
+</span><small>Afficher ou masquer une colonne contenant l'horodatage de dernière vérification pour toutes les tables.</small></th><td><span class="checkbox"><input type="checkbox" name="ShowDbStructureLastCheck" id="ShowDbStructureLastCheck"></span><a class="restore-default hide" href="http://localhost/phpmyadmin/db_structure.php?db=hospital&amp;table=&amp;server=1&amp;target=#ShowDbStructureLastCheck" title="Restaurer la valeur par défaut" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr></tbody></table>
+</fieldset>
+</div>
+</form>
+<script type="text/javascript">
+if (typeof configInlineParams === "undefined" || !Array.isArray(configInlineParams)) configInlineParams = [];
+configInlineParams.push(function() {
+$.extend(PMA_messages, {
+	'error_nan_p': 'Nombre non positif !',
+	'error_nan_nneg': 'Nombre non négatif !',
+	'error_incorrect_port': 'Numéro de port invalide !',
+	'error_invalid_value': 'Valeur incorrecte !',
+	'error_value_lte': 'La valeur doit être égale ou plus petite que %s !'});
+$.extend(defaultValues, {
+	'ShowDbStructureCharset': false,
+	'ShowDbStructureComment': false,
+	'ShowDbStructureCreation': false,
+	'ShowDbStructureLastUpdate': false,
+	'ShowDbStructureLastCheck': false});
+});
+if (typeof configScriptLoaded !== "undefined" && configInlineParams) loadInlineConfig();
+</script>
+</div></div><div id="tableslistcontainer"><fieldset id="tableFilter">
+    <legend>Filtres</legend>
+    <div class="formelement">
+        <label for="filterText">Contenant le mot : </label>
+        <input name="filterText" type="text" id="filterText" value="">
+    </div>
+</fieldset>
+<form method="post" action="http://localhost/phpmyadmin/db_structure.php" name="tablesForm" id="tablesForm">
+<input type="hidden" name="db" value="hospital"><input type="hidden" name="token" value="&quot;-WSR%@;3i^{a{(7">
+<div class="responsivetable">
+<table id="structureTable" class="data">
+    <thead>
+        <tr>
+            <th class="print_ignore"></th>
+            <th><a href="http://localhost/phpmyadmin/db_structure.php?db=hospital&amp;pos=0&amp;sort=table&amp;sort_order=DESC" title="Tri" onmouseover="$(&#39;.sort_arrow&#39;).toggle();" onmouseout="$(&#39;.sort_arrow&#39;).toggle();">Table <img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="" alt="Croissant" class="icon ic_s_asc sort_arrow"> <img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="" alt="Décroissant" class="icon ic_s_desc sort_arrow hide"></a></th>
+            
+                                                                                            <th colspan="7" class="print_ignore">
+                Action            </th>
+                        <th>
+                <a href="http://localhost/phpmyadmin/db_structure.php?db=hospital&amp;pos=0&amp;sort=records&amp;sort_order=DESC" title="Tri">Lignes</a>
+                <span class="pma_hint"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="" alt="" class="icon ic_b_help"><span class="hide">Peut être approximatif. Cliquer sur le nombre pour obtenir le compte exact. Voir <a href="http://localhost/phpmyadmin/doc/html/faq.html#faq3-11" target="documentation">FAQ 3.11</a>.</span></span>
+            </th>
+                            <th><a href="http://localhost/phpmyadmin/db_structure.php?db=hospital&amp;pos=0&amp;sort=type&amp;sort_order=ASC" title="Tri">Type</a></th>
+                <th><a href="http://localhost/phpmyadmin/db_structure.php?db=hospital&amp;pos=0&amp;sort=collation&amp;sort_order=ASC" title="Tri">Interclassement</a></th>
+            
+                                            <th><a href="http://localhost/phpmyadmin/db_structure.php?db=hospital&amp;pos=0&amp;sort=size&amp;sort_order=DESC" title="Tri">Taille</a></th>
+                                <th><a href="http://localhost/phpmyadmin/db_structure.php?db=hospital&amp;pos=0&amp;sort=overhead&amp;sort_order=DESC" title="Tri">Perte</a></th>
+            
+            
+            
+            
+            
+                    </tr>
+    </thead>
+    <tbody>
+<tr id="row_tbl_1" data-filter-row="ADMIN">
+    <td class="center print_ignore">
+        <input type="checkbox" name="selected_tbl[]" class="checkall" value="admin" id="checkbox_tbl_1">
+    </td>
+    <th>
+        <a href="http://localhost/phpmyadmin/sql.php?db=hospital&amp;table=admin&amp;pos=0" title="">
+    admin
+</a>
+
+        
+    </th>
+    
+                <td class="center print_ignore">
+                                    <a id="21232f297a57a5a743894a0e4a801fc3_favorite_anchor" class="ajax favorite_table_anchor" href="http://localhost/phpmyadmin/db_structure.php?db=hospital&amp;ajax_request=1&amp;favorite_table=admin&amp;add_favorite=1" title="Ajouter aux tables préférées" data-favtargets="759bc81aa131943a5efdba00efd4ef83">
+    <span class="nowrap"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="" alt="" class="icon ic_b_no_favorite">&nbsp;</span>
+</a>
+        </td>
+    
+    <td class="center print_ignore">
+        <a href="http://localhost/phpmyadmin/sql.php?db=hospital&amp;table=admin&amp;pos=0">
+    <span class="nowrap"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="Parcourir" alt="Parcourir" class="icon ic_bd_browse">&nbsp;Parcourir</span>
+</a>
+
+    </td>
+    <td class="center print_ignore">
+        <a href="http://localhost/phpmyadmin/tbl_structure.php?db=hospital&amp;table=admin">
+            <span class="nowrap"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="Structure" alt="Structure" class="icon ic_b_props">&nbsp;Structure</span>
+        </a>
+    </td>
+    <td class="center print_ignore">
+        <a href="http://localhost/phpmyadmin/tbl_select.php?db=hospital&amp;table=admin">
+    <span class="nowrap"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="Rechercher" alt="Rechercher" class="icon ic_bd_select">&nbsp;Rechercher</span>
+</a>
+
+    </td>
+
+            <td class="insert_table center print_ignore">
+            <a href="http://localhost/phpmyadmin/tbl_change.php?db=hospital&amp;table=admin"><span class="nowrap"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="Insérer" alt="Insérer" class="icon ic_b_insrow">&nbsp;Insérer</span></a>
+        </td>
+        <td class="center print_ignore"><a class="truncate_table_anchor ajax" href="http://localhost/phpmyadmin/sql.php" data-post="?db=hospital&amp;table=admin&amp;sql_query=TRUNCATE+%60admin%60&amp;message_to_show=La+table+admin+a+%C3%A9t%C3%A9+vid%C3%A9e.">
+    <span class="nowrap"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="Vider" alt="Vider" class="icon ic_bd_empty">&nbsp;Vider</span>
+</a>
+</td>
+        <td class="center print_ignore">
+            <a class="ajax drop_table_anchor" href="http://localhost/phpmyadmin/sql.php" data-post="?db=hospital&amp;table=admin&amp;reload=1&amp;purge=1&amp;sql_query=DROP%20TABLE%20%60admin%60&amp;message_to_show=La%20table%20admin%20a%20%C3%A9t%C3%A9%20supprim%C3%A9e.">
+                <span class="nowrap"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="Supprimer" alt="Supprimer" class="icon ic_b_drop">&nbsp;Supprimer</span>
+            </a>
+        </td>
+    
+                    
+                <td class="value tbl_rows" data-table="admin">
+                            0
+                        
+        </td>
+
+                    <td class="nowrap">
+                                    MyISAM
+                            </td>
+                            <td class="nowrap">
+                    <dfn title="Suédois, insensible à la casse">latin1_swedish_ci</dfn>
+                </td>
+                    
+                    <td class="value tbl_size">
+                <a href="http://localhost/phpmyadmin/tbl_structure.php?db=hospital&amp;table=admin#showusage">
+                    <span>1</span>
+                    <span class="unit">kio</span>
+                </a>
+            </td>
+            <td class="value tbl_overhead">
+                -
+            </td>
+        
+                            
+        
+        
+        
+        
+    </tr>
+<tr id="row_tbl_2" data-filter-row="APOINTMENT">
+    <td class="center print_ignore">
+        <input type="checkbox" name="selected_tbl[]" class="checkall" value="apointment" id="checkbox_tbl_2">
+    </td>
+    <th>
+        <a href="http://localhost/phpmyadmin/sql.php?db=hospital&amp;table=apointment&amp;pos=0" title="">
+    apointment
+</a>
+
+        
+    </th>
+    
+                <td class="center print_ignore">
+                                    <a id="7be9e2d0f869acf96c51bcadb8fc670b_favorite_anchor" class="ajax favorite_table_anchor" href="http://localhost/phpmyadmin/db_structure.php?db=hospital&amp;ajax_request=1&amp;favorite_table=apointment&amp;add_favorite=1" title="Ajouter aux tables préférées" data-favtargets="0e29617a753a7f20aa905d145922f99c">
+    <span class="nowrap"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="" alt="" class="icon ic_b_no_favorite">&nbsp;</span>
+</a>
+        </td>
+    
+    <td class="center print_ignore">
+        <a href="http://localhost/phpmyadmin/sql.php?db=hospital&amp;table=apointment&amp;pos=0">
+    <span class="nowrap"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="Parcourir" alt="Parcourir" class="icon ic_bd_browse">&nbsp;Parcourir</span>
+</a>
+
+    </td>
+    <td class="center print_ignore">
+        <a href="http://localhost/phpmyadmin/tbl_structure.php?db=hospital&amp;table=apointment">
+            <span class="nowrap"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="Structure" alt="Structure" class="icon ic_b_props">&nbsp;Structure</span>
+        </a>
+    </td>
+    <td class="center print_ignore">
+        <a href="http://localhost/phpmyadmin/tbl_select.php?db=hospital&amp;table=apointment">
+    <span class="nowrap"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="Rechercher" alt="Rechercher" class="icon ic_bd_select">&nbsp;Rechercher</span>
+</a>
+
+    </td>
+
+            <td class="insert_table center print_ignore">
+            <a href="http://localhost/phpmyadmin/tbl_change.php?db=hospital&amp;table=apointment"><span class="nowrap"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="Insérer" alt="Insérer" class="icon ic_b_insrow">&nbsp;Insérer</span></a>
+        </td>
+        <td class="center print_ignore"><a class="truncate_table_anchor ajax" href="http://localhost/phpmyadmin/sql.php" data-post="?db=hospital&amp;table=apointment&amp;sql_query=TRUNCATE+%60apointment%60&amp;message_to_show=La+table+apointment+a+%C3%A9t%C3%A9+vid%C3%A9e.">
+    <span class="nowrap"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="Vider" alt="Vider" class="icon ic_bd_empty">&nbsp;Vider</span>
+</a>
+</td>
+        <td class="center print_ignore">
+            <a class="ajax drop_table_anchor" href="http://localhost/phpmyadmin/sql.php" data-post="?db=hospital&amp;table=apointment&amp;reload=1&amp;purge=1&amp;sql_query=DROP%20TABLE%20%60apointment%60&amp;message_to_show=La%20table%20apointment%20a%20%C3%A9t%C3%A9%20supprim%C3%A9e.">
+                <span class="nowrap"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="Supprimer" alt="Supprimer" class="icon ic_b_drop">&nbsp;Supprimer</span>
+            </a>
+        </td>
+    
+                    
+                <td class="value tbl_rows" data-table="apointment">
+                            0
+                        
+        </td>
+
+                    <td class="nowrap">
+                                    MyISAM
+                            </td>
+                            <td class="nowrap">
+                    <dfn title="Suédois, insensible à la casse">latin1_swedish_ci</dfn>
+                </td>
+                    
+                    <td class="value tbl_size">
+                <a href="http://localhost/phpmyadmin/tbl_structure.php?db=hospital&amp;table=apointment#showusage">
+                    <span>1</span>
+                    <span class="unit">kio</span>
+                </a>
+            </td>
+            <td class="value tbl_overhead">
+                -
+            </td>
+        
+                            
+        
+        
+        
+        
+    </tr>
+<tr id="row_tbl_3" data-filter-row="DOCTOR">
+    <td class="center print_ignore">
+        <input type="checkbox" name="selected_tbl[]" class="checkall" value="doctor" id="checkbox_tbl_3">
+    </td>
+    <th>
+        <a href="http://localhost/phpmyadmin/sql.php?db=hospital&amp;table=doctor&amp;pos=0" title="">
+    doctor
+</a>
+
+        
+    </th>
+    
+                <td class="center print_ignore">
+                                    <a id="f9f16d97c90d8c6f2cab37bb6d1f1992_favorite_anchor" class="ajax favorite_table_anchor" href="http://localhost/phpmyadmin/db_structure.php?db=hospital&amp;ajax_request=1&amp;favorite_table=doctor&amp;add_favorite=1" title="Ajouter aux tables préférées" data-favtargets="3d95aa2c9b0141e837a6edec8369b960">
+    <span class="nowrap"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="" alt="" class="icon ic_b_no_favorite">&nbsp;</span>
+</a>
+        </td>
+    
+    <td class="center print_ignore">
+        <a href="http://localhost/phpmyadmin/sql.php?db=hospital&amp;table=doctor&amp;pos=0">
+    <span class="nowrap"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="Parcourir" alt="Parcourir" class="icon ic_bd_browse">&nbsp;Parcourir</span>
+</a>
+
+    </td>
+    <td class="center print_ignore">
+        <a href="http://localhost/phpmyadmin/tbl_structure.php?db=hospital&amp;table=doctor">
+            <span class="nowrap"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="Structure" alt="Structure" class="icon ic_b_props">&nbsp;Structure</span>
+        </a>
+    </td>
+    <td class="center print_ignore">
+        <a href="http://localhost/phpmyadmin/tbl_select.php?db=hospital&amp;table=doctor">
+    <span class="nowrap"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="Rechercher" alt="Rechercher" class="icon ic_bd_select">&nbsp;Rechercher</span>
+</a>
+
+    </td>
+
+            <td class="insert_table center print_ignore">
+            <a href="http://localhost/phpmyadmin/tbl_change.php?db=hospital&amp;table=doctor"><span class="nowrap"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="Insérer" alt="Insérer" class="icon ic_b_insrow">&nbsp;Insérer</span></a>
+        </td>
+        <td class="center print_ignore"><a class="truncate_table_anchor ajax" href="http://localhost/phpmyadmin/sql.php" data-post="?db=hospital&amp;table=doctor&amp;sql_query=TRUNCATE+%60doctor%60&amp;message_to_show=La+table+doctor+a+%C3%A9t%C3%A9+vid%C3%A9e.">
+    <span class="nowrap"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="Vider" alt="Vider" class="icon ic_bd_empty">&nbsp;Vider</span>
+</a>
+</td>
+        <td class="center print_ignore">
+            <a class="ajax drop_table_anchor" href="http://localhost/phpmyadmin/sql.php" data-post="?db=hospital&amp;table=doctor&amp;reload=1&amp;purge=1&amp;sql_query=DROP%20TABLE%20%60doctor%60&amp;message_to_show=La%20table%20doctor%20a%20%C3%A9t%C3%A9%20supprim%C3%A9e.">
+                <span class="nowrap"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="Supprimer" alt="Supprimer" class="icon ic_b_drop">&nbsp;Supprimer</span>
+            </a>
+        </td>
+    
+                    
+                <td class="value tbl_rows" data-table="doctor">
+                            0
+                        
+        </td>
+
+                    <td class="nowrap">
+                                    MyISAM
+                            </td>
+                            <td class="nowrap">
+                    <dfn title="Suédois, insensible à la casse">latin1_swedish_ci</dfn>
+                </td>
+                    
+                    <td class="value tbl_size">
+                <a href="http://localhost/phpmyadmin/tbl_structure.php?db=hospital&amp;table=doctor#showusage">
+                    <span>1</span>
+                    <span class="unit">kio</span>
+                </a>
+            </td>
+            <td class="value tbl_overhead">
+                -
+            </td>
+        
+                            
+        
+        
+        
+        
+    </tr>
+<tr id="row_tbl_4" data-filter-row="PATIENT">
+    <td class="center print_ignore">
+        <input type="checkbox" name="selected_tbl[]" class="checkall" value="patient" id="checkbox_tbl_4">
+    </td>
+    <th>
+        <a href="http://localhost/phpmyadmin/sql.php?db=hospital&amp;table=patient&amp;pos=0" title="">
+    patient
+</a>
+
+        
+    </th>
+    
+                <td class="center print_ignore">
+                                    <a id="b39024efbc6de61976f585c8421c6bba_favorite_anchor" class="ajax favorite_table_anchor" href="http://localhost/phpmyadmin/db_structure.php?db=hospital&amp;ajax_request=1&amp;favorite_table=patient&amp;add_favorite=1" title="Ajouter aux tables préférées" data-favtargets="85c6a627f94c0f68e53bdc64b8b0fafd">
+    <span class="nowrap"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="" alt="" class="icon ic_b_no_favorite">&nbsp;</span>
+</a>
+        </td>
+    
+    <td class="center print_ignore">
+        <a href="http://localhost/phpmyadmin/sql.php?db=hospital&amp;table=patient&amp;pos=0">
+    <span class="nowrap"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="Parcourir" alt="Parcourir" class="icon ic_bd_browse">&nbsp;Parcourir</span>
+</a>
+
+    </td>
+    <td class="center print_ignore">
+        <a href="http://localhost/phpmyadmin/tbl_structure.php?db=hospital&amp;table=patient">
+            <span class="nowrap"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="Structure" alt="Structure" class="icon ic_b_props">&nbsp;Structure</span>
+        </a>
+    </td>
+    <td class="center print_ignore">
+        <a href="http://localhost/phpmyadmin/tbl_select.php?db=hospital&amp;table=patient">
+    <span class="nowrap"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="Rechercher" alt="Rechercher" class="icon ic_bd_select">&nbsp;Rechercher</span>
+</a>
+
+    </td>
+
+            <td class="insert_table center print_ignore">
+            <a href="http://localhost/phpmyadmin/tbl_change.php?db=hospital&amp;table=patient"><span class="nowrap"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="Insérer" alt="Insérer" class="icon ic_b_insrow">&nbsp;Insérer</span></a>
+        </td>
+        <td class="center print_ignore"><a class="truncate_table_anchor ajax" href="http://localhost/phpmyadmin/sql.php" data-post="?db=hospital&amp;table=patient&amp;sql_query=TRUNCATE+%60patient%60&amp;message_to_show=La+table+patient+a+%C3%A9t%C3%A9+vid%C3%A9e.">
+    <span class="nowrap"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="Vider" alt="Vider" class="icon ic_bd_empty">&nbsp;Vider</span>
+</a>
+</td>
+        <td class="center print_ignore">
+            <a class="ajax drop_table_anchor" href="http://localhost/phpmyadmin/sql.php" data-post="?db=hospital&amp;table=patient&amp;reload=1&amp;purge=1&amp;sql_query=DROP%20TABLE%20%60patient%60&amp;message_to_show=La%20table%20patient%20a%20%C3%A9t%C3%A9%20supprim%C3%A9e.">
+                <span class="nowrap"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="Supprimer" alt="Supprimer" class="icon ic_b_drop">&nbsp;Supprimer</span>
+            </a>
+        </td>
+    
+                    
+                <td class="value tbl_rows" data-table="patient">
+                            0
+                        
+        </td>
+
+                    <td class="nowrap">
+                                    MyISAM
+                            </td>
+                            <td class="nowrap">
+                    <dfn title="Suédois, insensible à la casse">latin1_swedish_ci</dfn>
+                </td>
+                    
+                    <td class="value tbl_size">
+                <a href="http://localhost/phpmyadmin/tbl_structure.php?db=hospital&amp;table=patient#showusage">
+                    <span>1</span>
+                    <span class="unit">kio</span>
+                </a>
+            </td>
+            <td class="value tbl_overhead">
+                -
+            </td>
+        
+                            
+        
+        
+        
+        
+    </tr>
+<tr id="row_tbl_5" data-filter-row="RECEPTIONIST">
+    <td class="center print_ignore">
+        <input type="checkbox" name="selected_tbl[]" class="checkall" value="receptionist" id="checkbox_tbl_5">
+    </td>
+    <th>
+        <a href="http://localhost/phpmyadmin/sql.php?db=hospital&amp;table=receptionist&amp;pos=0" title="">
+    receptionist
+</a>
+
+        
+    </th>
+    
+                <td class="center print_ignore">
+                                    <a id="0a9b3767c8b9b69cea129110e8daeda2_favorite_anchor" class="ajax favorite_table_anchor" href="http://localhost/phpmyadmin/db_structure.php?db=hospital&amp;ajax_request=1&amp;favorite_table=receptionist&amp;add_favorite=1" title="Ajouter aux tables préférées" data-favtargets="8446a478fb95b8a6a94608d821d6e27e">
+    <span class="nowrap"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="" alt="" class="icon ic_b_no_favorite">&nbsp;</span>
+</a>
+        </td>
+    
+    <td class="center print_ignore">
+        <a href="http://localhost/phpmyadmin/sql.php?db=hospital&amp;table=receptionist&amp;pos=0">
+    <span class="nowrap"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="Parcourir" alt="Parcourir" class="icon ic_bd_browse">&nbsp;Parcourir</span>
+</a>
+
+    </td>
+    <td class="center print_ignore">
+        <a href="http://localhost/phpmyadmin/tbl_structure.php?db=hospital&amp;table=receptionist">
+            <span class="nowrap"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="Structure" alt="Structure" class="icon ic_b_props">&nbsp;Structure</span>
+        </a>
+    </td>
+    <td class="center print_ignore">
+        <a href="http://localhost/phpmyadmin/tbl_select.php?db=hospital&amp;table=receptionist">
+    <span class="nowrap"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="Rechercher" alt="Rechercher" class="icon ic_bd_select">&nbsp;Rechercher</span>
+</a>
+
+    </td>
+
+            <td class="insert_table center print_ignore">
+            <a href="http://localhost/phpmyadmin/tbl_change.php?db=hospital&amp;table=receptionist"><span class="nowrap"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="Insérer" alt="Insérer" class="icon ic_b_insrow">&nbsp;Insérer</span></a>
+        </td>
+        <td class="center print_ignore"><a class="truncate_table_anchor ajax" href="http://localhost/phpmyadmin/sql.php" data-post="?db=hospital&amp;table=receptionist&amp;sql_query=TRUNCATE+%60receptionist%60&amp;message_to_show=La+table+receptionist+a+%C3%A9t%C3%A9+vid%C3%A9e.">
+    <span class="nowrap"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="Vider" alt="Vider" class="icon ic_bd_empty">&nbsp;Vider</span>
+</a>
+</td>
+        <td class="center print_ignore">
+            <a class="ajax drop_table_anchor" href="http://localhost/phpmyadmin/sql.php" data-post="?db=hospital&amp;table=receptionist&amp;reload=1&amp;purge=1&amp;sql_query=DROP%20TABLE%20%60receptionist%60&amp;message_to_show=La%20table%20receptionist%20a%20%C3%A9t%C3%A9%20supprim%C3%A9e.">
+                <span class="nowrap"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="Supprimer" alt="Supprimer" class="icon ic_b_drop">&nbsp;Supprimer</span>
+            </a>
+        </td>
+    
+                    
+                <td class="value tbl_rows" data-table="receptionist">
+                            0
+                        
+        </td>
+
+                    <td class="nowrap">
+                                    MyISAM
+                            </td>
+                            <td class="nowrap">
+                    <dfn title="Suédois, insensible à la casse">latin1_swedish_ci</dfn>
+                </td>
+                    
+                    <td class="value tbl_size">
+                <a href="http://localhost/phpmyadmin/tbl_structure.php?db=hospital&amp;table=receptionist#showusage">
+                    <span>1</span>
+                    <span class="unit">kio</span>
+                </a>
+            </td>
+            <td class="value tbl_overhead">
+                -
+            </td>
+        
+                            
+        
+        
+        
+        
+    </tr>
+</tbody><tbody id="tbl_summary_row">
+<tr>
+    <th class="print_ignore"></th>
+    <th class="tbl_num nowrap">
+                5 tables
+    </th>
+                <th colspan="7" class="print_ignore">Somme</th>
+                                                <th class="value tbl_rows">0</th>
+                                                                    <th class="center">
+            <dfn title="Sur ce serveur MySQL, le moteur de stockage par défaut est MyISAM.">
+                MyISAM
+            </dfn>
+        </th>
+        <th>
+                            <dfn title="Suédois, insensible à la casse (Valeur par défaut)">
+                    latin1_swedish_ci
+                </dfn>
+                    </th>
+    
+                                    <th class="value tbl_size">5 kio</th>
+
+                                <th class="value tbl_overhead">0 o</th>
+    
+                    </tr>
+</tbody>
+</table><div class="clearfloat print_ignore">
+    <img class="selectallarrow" src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/arrow_ltr.png" width="38" height="22" alt="Avec la sélection :">
+    <input type="checkbox" id="tablesForm_checkall" class="checkall_box" title="Tout cocher">
+    <label for="tablesForm_checkall">Tout cocher</label>
+        <select name="submit_mult" style="margin: 0 3em 0 3em;">
+        <option value="Avec la sélection :" selected="selected">Avec la sélection :</option>
+        <option value="copy_tbl">Copier la table</option>
+        <option value="show_create">Afficher la requête de création</option>
+        <option value="export">Exporter</option>
+                    <optgroup label="Supprimer les données ou la table">
+                <option value="empty_tbl">Vider</option>
+                <option value="drop_tbl">Supprimer</option>
+            </optgroup>
+            <optgroup label="Maintenance de la table">
+                <option value="analyze_tbl">Analyser la table</option>
+                <option value="check_tbl">Vérifier la table</option>
+                <option value="checksum_tbl">Somme de contrôle de la table</option>
+                <option value="optimize_tbl">Optimiser la table</option>
+                <option value="repair_tbl">Réparer la table</option>
+            </optgroup>
+            <optgroup label="Préfixe">
+                <option value="add_prefix_tbl">Ajouter un préfixe à la table</option>
+                <option value="replace_prefix_tbl">Remplacer le préfixe de table</option>
+                <option value="copy_tbl_change_prefix">Copier la table avec un préfixe</option>
+            </optgroup>
+                    </select>
+    
+</div>
+</div></form><hr><p class="print_ignore">
+    <a href="http://localhost/phpmyadmin/db_structure.php?db=hospital&amp;table=&amp;server=1&amp;target=#" id="printView">
+        <span class="nowrap"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="Imprimer" alt="Imprimer" class="icon ic_b_print">&nbsp;Imprimer</span>
+    </a>
+    <a href="http://localhost/phpmyadmin/db_datadict.php?db=hospital&amp;amp;goto=db_structure.php" target="print_view">
+        <span class="nowrap"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="Dictionnaire de données" alt="Dictionnaire de données" class="icon ic_b_tblanalyse">&nbsp;Dictionnaire de données</span>
+    </a>
+</p>
+<form id="create_table_form_minimal" method="post" action="http://localhost/phpmyadmin/tbl_create.php" class="lock-page">
+    <fieldset>
+        <legend>
+        <img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="" alt="" class="icon ic_b_table_add">        Nouvelle table        </legend>
+        <input type="hidden" name="db" value="hospital"><input type="hidden" name="token" value="&quot;-WSR%@;3i^{a{(7">
+        <div class="formelement">
+            Nom&nbsp;:
+            <input type="text" name="table" maxlength="64" size="30" required="required">
+        </div>
+        <div class="formelement">
+            Nombre de colonnes&nbsp;:
+            <input type="number" min="1" name="num_fields" value="4" required="required">
+        </div>
+        <div class="clearfloat"></div>
+    </fieldset>
+    <fieldset class="tblFooters">
+        <input type="submit" value="Exécuter">
+    </fieldset>
+</form>
+</div><div id="selflink" class="print_ignore"><a href="http://localhost/phpmyadmin/db_structure.php?db=hospital&amp;table=&amp;server=1&amp;target=" title="Ouvrir une nouvelle fenêtre phpMyAdmin" target="_blank" rel="noopener noreferrer"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="Ouvrir une nouvelle fenêtre phpMyAdmin" alt="Ouvrir une nouvelle fenêtre phpMyAdmin" class="icon ic_window-new"></a></div><div class="clearfloat" id="pma_errors"></div><script data-cfasync="false" type="text/javascript">// <![CDATA[
+var debugSQLInfo = 'null';
+AJAX.scriptHandler;
+$(function() {});
+// ]]></script></div><div role="log" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div><div role="log" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div><div role="log" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div><div role="log" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div><div role="log" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div><div role="log" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div><div tabindex="-1" role="dialog" class="ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ui-dialog-buttons ui-draggable ui-resizable" aria-describedby="pma_navigation_settings" aria-labelledby="ui-id-1" style="position: fixed; height: auto; width: 700px; top: 17.337px; left: 285.877px;"><div class="ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle"><span id="ui-id-1" class="ui-dialog-title">Paramètres relatifs à la page</span><button type="button" class="ui-button ui-corner-all ui-widget ui-button-icon-only ui-dialog-titlebar-close" title="Close"><span class="ui-button-icon ui-icon ui-icon-closethick"></span><span class="ui-button-icon-space"> </span>Close</button></div><div id="pma_navigation_settings" class="ui-dialog-content ui-widget-content" style="display: block; width: auto; min-height: 139.018px; max-height: 553.346px; height: auto;"><div class="page_settings"><form method="post" action="http://localhost/phpmyadmin/db_structure.php?db=hospital&amp;table=&amp;server=1&amp;target=" class="config-form disableAjax"><input type="hidden" name="tab_hash" value=""><input type="hidden" name="token" value="&quot;-WSR%@;3i^{a{(7">
+<input type="hidden" name="submit_save" value="Navi"><input type="hidden" name="token" value="&quot;-WSR%@;3i^{a{(7"><ul class="tabs responsivetable">
+
+                                    <li class="active">
+
+            <a href="http://localhost/phpmyadmin/db_structure.php?db=hospital&amp;table=&amp;server=1&amp;target=#Navi_panel">
+            Panneau de navigation
+            </a>
+        </li>
+                                <li>
+
+            <a href="http://localhost/phpmyadmin/db_structure.php?db=hospital&amp;table=&amp;server=1&amp;target=#Navi_tree">
+            Arborescence de navigation
+            </a>
+        </li>
+                                <li>
+
+            <a href="http://localhost/phpmyadmin/db_structure.php?db=hospital&amp;table=&amp;server=1&amp;target=#Navi_servers">
+            Serveurs
+            </a>
+        </li>
+                                <li>
+
+            <a href="http://localhost/phpmyadmin/db_structure.php?db=hospital&amp;table=&amp;server=1&amp;target=#Navi_databases">
+            Bases de données
+            </a>
+        </li>
+                                <li>
+
+            <a href="http://localhost/phpmyadmin/db_structure.php?db=hospital&amp;table=&amp;server=1&amp;target=#Navi_tables">
+            Tables
+            </a>
+        </li>
+            </ul>
+<br><div class="tabs_contents"><fieldset class="optbox" id="Navi_panel" style="">
+<legend>Panneau de navigation</legend>
+    <p>Personnaliser l'apparence du panneau de navigation.</p>
+<table width="100%" cellspacing="0">
+<tbody><tr><th><label for="ShowDatabasesNavigationAsTree">Afficher la navigation des bases de données en tant qu'arborescence</label><span class="doc"><a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_ShowDatabasesNavigationAsTree" target="documentation"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help"></a>
+</span><small>Dans le volet de navigation, remplacer l'arborescence de la base de données par un sélecteur</small></th><td><span class="checkbox"><input type="checkbox" name="ShowDatabasesNavigationAsTree" id="ShowDatabasesNavigationAsTree" checked="checked"></span><a class="restore-default hide" href="http://localhost/phpmyadmin/db_structure.php?db=hospital&amp;table=&amp;server=1&amp;target=#ShowDatabasesNavigationAsTree" title="Restaurer la valeur par défaut" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr><tr><th><label for="NavigationLinkWithMainPanel">Relier au panneau principal</label><span class="doc"><a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_NavigationLinkWithMainPanel" target="documentation"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help"></a>
+</span><small>Relier au panneau principal en mettant en surbrillance la base de données ou la table active.</small></th><td><span class="checkbox"><input type="checkbox" name="NavigationLinkWithMainPanel" id="NavigationLinkWithMainPanel" checked="checked"></span><a class="restore-default hide" href="http://localhost/phpmyadmin/db_structure.php?db=hospital&amp;table=&amp;server=1&amp;target=#NavigationLinkWithMainPanel" title="Restaurer la valeur par défaut" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr><tr><th><label for="NavigationDisplayLogo">Afficher le logo</label><span class="doc"><a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_NavigationDisplayLogo" target="documentation"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help"></a>
+</span><small>Afficher le logo dans le panneau de navigation.</small></th><td><span class="checkbox"><input type="checkbox" name="NavigationDisplayLogo" id="NavigationDisplayLogo" checked="checked"></span><a class="restore-default hide" href="http://localhost/phpmyadmin/db_structure.php?db=hospital&amp;table=&amp;server=1&amp;target=#NavigationDisplayLogo" title="Restaurer la valeur par défaut" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr><tr><th><label for="NavigationLogoLink">URL du lien sous le logo</label><span class="doc"><a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_NavigationLogoLink" target="documentation"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help"></a>
+</span><small>L'URL vers lequel pointera le logo dans le panneau de navigation.</small></th><td><input type="text" class="all85" name="NavigationLogoLink" id="NavigationLogoLink" value="index.php"><a class="restore-default hide" href="http://localhost/phpmyadmin/db_structure.php?db=hospital&amp;table=&amp;server=1&amp;target=#NavigationLogoLink" title="Restaurer la valeur par défaut" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr><tr><th><label for="NavigationLogoLinkWindow">Fenêtre cible pour la page ouverte lors d'un clic sur le logo</label><span class="doc"><a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_NavigationLogoLinkWindow" target="documentation"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help"></a>
+</span><small>Ouvrir la page en lien dans la fenêtre principale, (<kbd>main</kbd>) ou dans une nouvelle fenêtre, (<kbd>new</kbd>).</small></th><td><select class="all85" name="NavigationLogoLinkWindow" id="NavigationLogoLinkWindow"><option value="main" selected="selected">main</option><option value="new">new</option></select><a class="restore-default hide" href="http://localhost/phpmyadmin/db_structure.php?db=hospital&amp;table=&amp;server=1&amp;target=#NavigationLogoLinkWindow" title="Restaurer la valeur par défaut" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr><tr><th><label for="NavigationTreePointerEnable">Active la surbrillance</label><span class="doc"><a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_NavigationTreePointerEnable" target="documentation"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help"></a>
+</span><small>Faire ressortir le nom du serveur dans le panneau de navigation.</small></th><td><span class="checkbox"><input type="checkbox" name="NavigationTreePointerEnable" id="NavigationTreePointerEnable" checked="checked"></span><a class="restore-default hide" href="http://localhost/phpmyadmin/db_structure.php?db=hospital&amp;table=&amp;server=1&amp;target=#NavigationTreePointerEnable" title="Restaurer la valeur par défaut" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr><tr><th><label for="FirstLevelNavigationItems">Nombre maximum d'éléments au premier niveau</label><span class="doc"><a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_FirstLevelNavigationItems" target="documentation"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help"></a>
+</span><small>Le nombre d'éléments qui peuvent être affichés pour chaque page du premier niveau de l'arborescence de navigation.</small></th><td><input type="number" name="FirstLevelNavigationItems" id="FirstLevelNavigationItems" value="100"><a class="restore-default hide" href="http://localhost/phpmyadmin/db_structure.php?db=hospital&amp;table=&amp;server=1&amp;target=#FirstLevelNavigationItems" title="Restaurer la valeur par défaut" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr><tr><th><label for="NavigationTreeDisplayItemFilterMinimum">Nombre minimum d'éléments pour afficher la boîte de filtrage</label><span class="doc"><a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_NavigationTreeDisplayItemFilterMinimum" target="documentation"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help"></a>
+</span><small>Définir le nombre minimum d'éléments (tables, vues, procédures et événements) nécessaires pour afficher la boîte de filtrage.</small></th><td><input type="number" name="NavigationTreeDisplayItemFilterMinimum" id="NavigationTreeDisplayItemFilterMinimum" value="30"><a class="restore-default hide" href="http://localhost/phpmyadmin/db_structure.php?db=hospital&amp;table=&amp;server=1&amp;target=#NavigationTreeDisplayItemFilterMinimum" title="Restaurer la valeur par défaut" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr><tr><th><label for="NumRecentTables">Tables récemment utilisées</label><span class="doc"><a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_NumRecentTables" target="documentation"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help"></a>
+</span><small>Nombre maximum de tables récentes ; définir à 0 pour désactiver.</small></th><td><input type="number" name="NumRecentTables" id="NumRecentTables" value="10"><a class="restore-default hide" href="http://localhost/phpmyadmin/db_structure.php?db=hospital&amp;table=&amp;server=1&amp;target=#NumRecentTables" title="Restaurer la valeur par défaut" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr><tr><th><label for="NumFavoriteTables">Tables préférées</label><span class="doc"><a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_NumFavoriteTables" target="documentation"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help"></a>
+</span><small>Le nombre maximum de tables préférées ; définir à 0 pour désactiver.</small></th><td><input type="number" name="NumFavoriteTables" id="NumFavoriteTables" value="10"><a class="restore-default hide" href="http://localhost/phpmyadmin/db_structure.php?db=hospital&amp;table=&amp;server=1&amp;target=#NumFavoriteTables" title="Restaurer la valeur par défaut" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr><tr><th><label for="NavigationWidth">Largeur du panneau de navigation</label><span class="doc"><a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_NavigationWidth" target="documentation"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help"></a>
+</span><small>Définir à 0 pour replier le panneau de navigation.</small></th><td><input type="number" name="NavigationWidth" id="NavigationWidth" value="240"><a class="restore-default hide" href="http://localhost/phpmyadmin/db_structure.php?db=hospital&amp;table=&amp;server=1&amp;target=#NavigationWidth" title="Restaurer la valeur par défaut" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr></tbody></table>
+</fieldset>
+<fieldset class="optbox" id="Navi_tree" style="display: none;">
+<legend>Arborescence de navigation</legend>
+    <p>Personnaliser l'arborescence de navigation.</p>
+<table width="100%" cellspacing="0">
+<tbody><tr><th><label for="MaxNavigationItems">Nombre maximum d'éléments dans la branche</label><span class="doc"><a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_MaxNavigationItems" target="documentation"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help"></a>
+</span><small>Le nombre d'éléments qui peuvent être affichés pour chaque page de l'arborescence de navigation.</small></th><td><input type="number" name="MaxNavigationItems" id="MaxNavigationItems" value="50"><a class="restore-default hide" href="http://localhost/phpmyadmin/db_structure.php?db=hospital&amp;table=&amp;server=1&amp;target=#MaxNavigationItems" title="Restaurer la valeur par défaut" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr><tr><th><label for="NavigationTreeEnableGrouping">Regrouper les éléments dans l'arborescence</label><span class="doc"><a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_NavigationTreeEnableGrouping" target="documentation"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help"></a>
+</span><small>Regrouper les éléments dans l'arborescence de navigation (déterminé par le séparateur défini dans les onglets Bases de données et Tables ci-dessus).</small></th><td><span class="checkbox"><input type="checkbox" name="NavigationTreeEnableGrouping" id="NavigationTreeEnableGrouping" checked="checked"></span><a class="restore-default hide" href="http://localhost/phpmyadmin/db_structure.php?db=hospital&amp;table=&amp;server=1&amp;target=#NavigationTreeEnableGrouping" title="Restaurer la valeur par défaut" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr><tr><th><label for="NavigationTreeEnableExpansion">Activer l'expansion de l'arborescence de navigation</label><span class="doc"><a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_NavigationTreeEnableExpansion" target="documentation"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help"></a>
+</span><small>Pour offrir la possibilité d'expansion de l'arborescence dans le panneau de navigation.</small></th><td><span class="checkbox"><input type="checkbox" name="NavigationTreeEnableExpansion" id="NavigationTreeEnableExpansion" checked="checked"></span><a class="restore-default hide" href="http://localhost/phpmyadmin/db_structure.php?db=hospital&amp;table=&amp;server=1&amp;target=#NavigationTreeEnableExpansion" title="Restaurer la valeur par défaut" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr><tr><th><label for="NavigationTreeShowTables">Afficher les tables dans l'arborescence</label><span class="doc"><a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_NavigationTreeShowTables" target="documentation"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help"></a>
+</span><small>Pour afficher les tables dans l'arborescence de navigation</small></th><td><span class="checkbox"><input type="checkbox" name="NavigationTreeShowTables" id="NavigationTreeShowTables" checked="checked"></span><a class="restore-default hide" href="http://localhost/phpmyadmin/db_structure.php?db=hospital&amp;table=&amp;server=1&amp;target=#NavigationTreeShowTables" title="Restaurer la valeur par défaut" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr><tr><th><label for="NavigationTreeShowViews">Afficher les vues dans l'arborescence</label><span class="doc"><a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_NavigationTreeShowViews" target="documentation"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help"></a>
+</span><small>Pour afficher les vues dans l'arborescence de navigation</small></th><td><span class="checkbox"><input type="checkbox" name="NavigationTreeShowViews" id="NavigationTreeShowViews" checked="checked"></span><a class="restore-default hide" href="http://localhost/phpmyadmin/db_structure.php?db=hospital&amp;table=&amp;server=1&amp;target=#NavigationTreeShowViews" title="Restaurer la valeur par défaut" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr><tr><th><label for="NavigationTreeShowFunctions">Afficher les fonctions dans l'arborescence</label><span class="doc"><a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_NavigationTreeShowFunctions" target="documentation"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help"></a>
+</span><small>Pour afficher les fonctions dans l'arborescence de navigation</small></th><td><span class="checkbox"><input type="checkbox" name="NavigationTreeShowFunctions" id="NavigationTreeShowFunctions" checked="checked"></span><a class="restore-default hide" href="http://localhost/phpmyadmin/db_structure.php?db=hospital&amp;table=&amp;server=1&amp;target=#NavigationTreeShowFunctions" title="Restaurer la valeur par défaut" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr><tr><th><label for="NavigationTreeShowProcedures">Afficher les procédures dans l'arborescence</label><span class="doc"><a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_NavigationTreeShowProcedures" target="documentation"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help"></a>
+</span><small>Pour afficher les procédures dans l'arborescence de navigation</small></th><td><span class="checkbox"><input type="checkbox" name="NavigationTreeShowProcedures" id="NavigationTreeShowProcedures" checked="checked"></span><a class="restore-default hide" href="http://localhost/phpmyadmin/db_structure.php?db=hospital&amp;table=&amp;server=1&amp;target=#NavigationTreeShowProcedures" title="Restaurer la valeur par défaut" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr><tr><th><label for="NavigationTreeShowEvents">Afficher les évènements dans l'arborescence</label><span class="doc"><a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_NavigationTreeShowEvents" target="documentation"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help"></a>
+</span><small>Pour afficher les événements dans l'arborescence de navigation</small></th><td><span class="checkbox"><input type="checkbox" name="NavigationTreeShowEvents" id="NavigationTreeShowEvents" checked="checked"></span><a class="restore-default hide" href="http://localhost/phpmyadmin/db_structure.php?db=hospital&amp;table=&amp;server=1&amp;target=#NavigationTreeShowEvents" title="Restaurer la valeur par défaut" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr></tbody></table>
+</fieldset>
+<fieldset class="optbox" id="Navi_servers" style="display: none;">
+<legend>Serveurs</legend>
+    <p>Options d'affichage des serveurs.</p>
+<table width="100%" cellspacing="0">
+<tbody><tr><th><label for="NavigationDisplayServers">Afficher la liste des serveurs</label><span class="doc"><a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_NavigationDisplayServers" target="documentation"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help"></a>
+</span><small>Afficher le choix de serveurs au haut du panneau de navigation.</small></th><td><span class="checkbox"><input type="checkbox" name="NavigationDisplayServers" id="NavigationDisplayServers" checked="checked"></span><a class="restore-default hide" href="http://localhost/phpmyadmin/db_structure.php?db=hospital&amp;table=&amp;server=1&amp;target=#NavigationDisplayServers" title="Restaurer la valeur par défaut" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr><tr><th><label for="DisplayServersList">Afficher les serveurs sous forme de liste</label><span class="doc"><a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_DisplayServersList" target="documentation"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help"></a>
+</span><small>Afficher la liste des serveurs au lieu d'un menu déroulant.</small></th><td><span class="checkbox"><input type="checkbox" name="DisplayServersList" id="DisplayServersList"></span><a class="restore-default hide" href="http://localhost/phpmyadmin/db_structure.php?db=hospital&amp;table=&amp;server=1&amp;target=#DisplayServersList" title="Restaurer la valeur par défaut" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr></tbody></table>
+</fieldset>
+<fieldset class="optbox" id="Navi_databases" style="display: none;">
+<legend>Bases de données</legend>
+    <p>Options d'affichage des bases de données.</p>
+<table width="100%" cellspacing="0">
+<tbody><tr><th><label for="NavigationTreeDisplayDbFilterMinimum">Nombre minimum de bases de données pour activer le filtre</label><span class="doc"><a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_NavigationTreeDisplayDbFilterMinimum" target="documentation"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help"></a>
+</span></th><td><input type="number" name="NavigationTreeDisplayDbFilterMinimum" id="NavigationTreeDisplayDbFilterMinimum" value="30"><a class="restore-default hide" href="http://localhost/phpmyadmin/db_structure.php?db=hospital&amp;table=&amp;server=1&amp;target=#NavigationTreeDisplayDbFilterMinimum" title="Restaurer la valeur par défaut" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr><tr><th><label for="NavigationTreeDbSeparator">Séparateur pour l'arborescence des bases de données</label><span class="doc"><a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_NavigationTreeDbSeparator" target="documentation"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help"></a>
+</span><small>Chaîne qui sépare les noms de bases de données en niveaux.</small></th><td><input type="text" size="25" name="NavigationTreeDbSeparator" id="NavigationTreeDbSeparator" value="_"><a class="restore-default hide" href="http://localhost/phpmyadmin/db_structure.php?db=hospital&amp;table=&amp;server=1&amp;target=#NavigationTreeDbSeparator" title="Restaurer la valeur par défaut" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr></tbody></table>
+</fieldset>
+<fieldset class="optbox" id="Navi_tables" style="display: none;">
+<legend>Tables</legend>
+    <p>Options d'affichage des tables.</p>
+<table width="100%" cellspacing="0">
+<tbody><tr><th><label for="NavigationTreeDefaultTabTable">Cible de l'icône d'accès rapide</label><span class="doc"><a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_NavigationTreeDefaultTabTable" target="documentation"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help"></a>
+</span></th><td><select class="all85" name="NavigationTreeDefaultTabTable" id="NavigationTreeDefaultTabTable"><option value="structure" selected="selected">Structure</option><option value="sql">SQL</option><option value="search">Rechercher</option><option value="insert">Insérer</option><option value="browse">Parcourir</option></select><a class="restore-default hide" href="http://localhost/phpmyadmin/db_structure.php?db=hospital&amp;table=&amp;server=1&amp;target=#NavigationTreeDefaultTabTable" title="Restaurer la valeur par défaut" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr><tr><th><label for="NavigationTreeDefaultTabTable2">Cible de la deuxième icône d'accès rapide</label><span class="doc"><a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_NavigationTreeDefaultTabTable2" target="documentation"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help"></a>
+</span></th><td><select class="all85" name="NavigationTreeDefaultTabTable2" id="NavigationTreeDefaultTabTable2"><option value="" selected="selected"></option><option value="structure">Structure</option><option value="sql">SQL</option><option value="search">Rechercher</option><option value="insert">Insérer</option><option value="browse">Parcourir</option></select><a class="restore-default hide" href="http://localhost/phpmyadmin/db_structure.php?db=hospital&amp;table=&amp;server=1&amp;target=#NavigationTreeDefaultTabTable2" title="Restaurer la valeur par défaut" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr><tr><th><label for="NavigationTreeTableSeparator">Séparateur pour l'arborescence des noms de tables</label><span class="doc"><a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_NavigationTreeTableSeparator" target="documentation"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help"></a>
+</span><small>Chaîne qui sépare les noms de table en niveaux.</small></th><td><input type="text" size="25" name="NavigationTreeTableSeparator" id="NavigationTreeTableSeparator" value="__"><a class="restore-default hide" href="http://localhost/phpmyadmin/db_structure.php?db=hospital&amp;table=&amp;server=1&amp;target=#NavigationTreeTableSeparator" title="Restaurer la valeur par défaut" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr><tr><th><label for="NavigationTreeTableLevel">Nombre de niveaux pour l'arborescence des tables</label><span class="doc"><a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_NavigationTreeTableLevel" target="documentation"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help"></a>
+</span></th><td><input type="number" name="NavigationTreeTableLevel" id="NavigationTreeTableLevel" value="1"><a class="restore-default hide" href="http://localhost/phpmyadmin/db_structure.php?db=hospital&amp;table=&amp;server=1&amp;target=#NavigationTreeTableLevel" title="Restaurer la valeur par défaut" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ MySQL _ hospital _ phpMyAdmin 4.8.4_files/dot.gif" title="" alt="" class="icon ic_s_reload" style="display: none;"></a></td></tr></tbody></table>
+</fieldset>
+</div>
+</form>
+<script type="text/javascript">
+if (typeof configInlineParams === "undefined" || !Array.isArray(configInlineParams)) configInlineParams = [];
+configInlineParams.push(function() {
+validateField('FirstLevelNavigationItems', 'PMA_validatePositiveNumber', true);
+validateField('NumRecentTables', 'PMA_validateNonNegativeNumber', true);
+validateField('NumFavoriteTables', 'PMA_validateNonNegativeNumber', true);
+validateField('NavigationWidth', 'PMA_validateNonNegativeNumber', true);
+validateField('MaxNavigationItems', 'PMA_validatePositiveNumber', true);
+validateField('NavigationTreeTableLevel', 'PMA_validatePositiveNumber', true);
+$.extend(PMA_messages, {
+	'error_nan_p': 'Nombre non positif !',
+	'error_nan_nneg': 'Nombre non négatif !',
+	'error_incorrect_port': 'Numéro de port invalide !',
+	'error_invalid_value': 'Valeur incorrecte !',
+	'error_value_lte': 'La valeur doit être égale ou plus petite que %s !'});
+$.extend(defaultValues, {
+	'ShowDatabasesNavigationAsTree': true,
+	'NavigationLinkWithMainPanel': true,
+	'NavigationDisplayLogo': true,
+	'NavigationLogoLink': 'index.php',
+	'NavigationLogoLinkWindow': ['main'],
+	'NavigationTreePointerEnable': true,
+	'FirstLevelNavigationItems': '100',
+	'NavigationTreeDisplayItemFilterMinimum': '30',
+	'NumRecentTables': '10',
+	'NumFavoriteTables': '10',
+	'NavigationWidth': '240',
+	'MaxNavigationItems': '50',
+	'NavigationTreeEnableGrouping': true,
+	'NavigationTreeEnableExpansion': true,
+	'NavigationTreeShowTables': true,
+	'NavigationTreeShowViews': true,
+	'NavigationTreeShowFunctions': true,
+	'NavigationTreeShowProcedures': true,
+	'NavigationTreeShowEvents': true,
+	'NavigationDisplayServers': true,
+	'DisplayServersList': false,
+	'NavigationTreeDisplayDbFilterMinimum': '30',
+	'NavigationTreeDbSeparator': '_',
+	'NavigationTreeDefaultTabTable': ['structure'],
+	'NavigationTreeDefaultTabTable2': [''],
+	'NavigationTreeTableSeparator': '__',
+	'NavigationTreeTableLevel': '1'});
+});
+if (typeof configScriptLoaded !== "undefined" && configInlineParams) loadInlineConfig();
+</script>
+</div></div><div class="ui-dialog-buttonpane ui-widget-content ui-helper-clearfix"><div class="ui-dialog-buttonset"><button type="button" class="ui-button ui-corner-all ui-widget">Appliquer</button><button type="button" class="ui-button ui-corner-all ui-widget">Annuler</button></div></div><div class="ui-resizable-handle ui-resizable-n" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-s" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-w" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-sw" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-ne" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-nw" style="z-index: 90;"></div></div><div class="ui-widget-overlay ui-front" style="z-index: 800;"></div></body></html>

@@ -1,0 +1,27 @@
+Host:
+-Admin:
+     -patient info:
+               -Add patient:-date,id,name....(add,clear)
+               -update patient:-table
+               -delet patient:-name of patient,table
+               -search patient
+               -view patient:-table
+     -doctor info:
+               -Add doctor:-date,id,name....(add,clear)
+               -update:-table
+               -delet:-name of doctor,table
+               -search:-name of doctor,table
+               -view:-table
+     -receptionist info:
+               -Add receptionist
+               -update
+               -delet
+               -search
+               -view
+-Doctor:
+     -Appointments:
+               -add patient
+               -update patient
+               -set appointment
+-Receptionist
+
